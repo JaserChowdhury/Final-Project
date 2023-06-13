@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Modules Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='modules.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='nav.css'>
+    <script src="https://kit.fontawesome.com/8b4203e853.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu"> 
+            <ul>
+                <div style="width: 50%; text-align: right;">
+                    <li><a href="coursework.html">Coursework</a></li>
+                    <li><a href="artifacts.html">Artifacts</a></li>
+                    <li style="margin-right: 75px;"><a href="modules.html">Modules</a></li>
+                </div>
+                <div style="width: 50%; text-align: left;">
+                    <li style="margin-left: 75px;"><a href="about.html">About</a></li>
+                    <li><a href="creative.html">Creative</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Modules</h1>
+    </div>
+    <div class="content">
+        <div class="menu-container">
+            <ul class="radial">
+                <div class="toggle" onclick="toggling()">
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+                <li style="--i:0;" data-tab-target="#recipe"><a href="#"><i class="fa-solid fa-burger"></i></a></li>
+                <li style="--i:1;" data-tab-target="#table"><a href="#"><i class="fa-solid fa-table"></i></a></li>
+                <li style="--i:2;" data-tab-target="#letter"><a href="#"><i class="fa-solid fa-envelope-open-text"></i></a></li>
+                <li style="--i:3;" data-tab-target="#website"><a href="#"><i class="fa-solid fa-desktop"></i></a></li>
+                <li style="--i:4;" data-tab-target="#multiplication"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li style="--i:5;" data-tab-target="#hotel"><a href="#"><i class="fa-solid fa-hotel"></i></a></li>
+                <li style="--i:6;" data-tab-target="#list"><a href="#"><i class="fa-solid fa-rectangle-list"></i></a></li>
+                <li style="--i:7;" data-tab-target="#drawing"><a href="#"><i class="fa-solid fa-paintbrush"></i></a></li>
+            </ul>
+        </div>
+        <div class="presentation">
+            <div class="assignment" id="resume" data-tab-content>
+                <img src="artifacts/resume.png" alt="Resume">
+                <h4>Artifact #1<br>A webpage with full resume details built using only HTML!</h4>
+                <a href="https://jaserchowdhury.github.io/a1/" alt="Artifact Link" target="_blank">Visit Artifact  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+            </div>
+            <div class="assignment" id="chessboard" data-tab-content>
+                <img src="artifacts/chessboard.png" alt="Chessboard">
+                <h4>Artifact #2<br>A webpage depicting a full chess board (HTML + CSS)!</h4>
+                <a href="https://jaserchowdhury.github.io/a02/" alt="Artifact Link" target="_blank">Visit Artifact  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+            </div>
+            <div class="assignment" id="rhombus" style="height: 360px;" data-tab-content>
+                <img src="artifacts/rhombus.png" alt="Rhombus">
+                <h4 style="font-size: 19px;">Artifact #3<br>A webpage that generates multi-colored rhombuses(HTML + CSS + JS)!</h4>
+                <a href="https://jaserchowdhury.github.io/a03/" alt="Artifact Link" target="_blank">Visit Artifact  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+            </div>
+            <div class="assignment" id="form" data-tab-content>
+                <img src="artifacts/form.png" alt="Form Validation">
+                <h4 style="font-size: 19px;">Artifact #4<br>A webpage built to validate form inputs (HTML + CSS + JS)!</h4>
+                <a href="https://jaserchowdhury.github.io/a04/" alt="Artifact Link" target="_blank">Visit Artifact  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+            </div>
+            <div class="assignment" id="slideshow" style="height: 360px;" data-tab-content>
+                <img src="artifacts/slideshow.png" alt="Slideshow">
+                <h4 style="font-size: 19px;">Artifact #5<br>A webpage that hosts a slideshow of animal photos (HTML + CSS + JS)!</h4>
+                <a href="https://jaserchowdhury.github.io/a05/" alt="Artifact Link" target="_blank">Visit Artifact  <i class="fa-solid fa-arrow-right fa-sm"></i></a>
+            </div>
+            <div class="glow"></div>
+        </div>
+    </div>
+    <div class="spacer" style="height: 200px; width: 100%;"></div>
+
+    <script>
+        let menuToggle = document.querySelector(".toggle");
+        let menu = document.querySelector(".radial");
+        
+        function toggling(){
+            menu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+
+        const tabs = document.querySelectorAll('[data-tab-target]')
+        const tabContents = document.querySelectorAll('[data-tab-content]')
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document.querySelector(tab.dataset.tabTarget)
+                tabContents.forEach(tabContent => {
+                    tabContent.classList.remove('active')
+                })
+                tabs.forEach(tab => {
+                    tab.classList.remove('active')
+                })
+                tab.classList.add('active')
+                target.classList.add('active')
+            })
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

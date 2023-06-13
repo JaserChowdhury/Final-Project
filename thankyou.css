@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    background: linear-gradient(180deg, #40c9ff, #e81cff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-top: 175px;
+    text-align: center;
+    font-family: 'Space Grotesk';
+    font-size: 200px;
+}
+
+/* This implementation would take too long (maybe in my free time)
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.IDE{
+    padding-top: 30px;
+
+    width: 400px;
+    height: 420px;
+
+    background-color: rgb(42, 42, 42);
+    border-radius: 6px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 15px 35px rgb(103, 103, 103);
+}
+.row{
+    display: flex;
+}
+.line{
+    width: 30px;
+}
+.line h1{
+    color: white;
+    margin: 0 0;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 400;
+}
+.code h1{
+    color: white;
+    margin: 0 0 0 25px;
+    font-size: 17px;
+    font-weight: 500;
+}
+span{
+    color: aqua;
+}
+#thanks{
+    font-size: 24px;
+}
+#thanks_line{
+    padding-top: 7px;
+}
+.tabbed{
+    margin: 0 0 0 25px;
+}
+
+.browser{
+    width: 600px;
+    height: 450px;
+
+    background-color: rgb(42, 42, 42);
+    border-radius: 6px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 15px 35px rgb(103, 103, 103);
+}
+.navbar{
+    display: flex;
+    background-color: rgb(65, 64, 64);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+}
+.buttons{
+    display: flex;
+    padding-left: 15px;
+}
+.button{
+    margin: 10px 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+*/

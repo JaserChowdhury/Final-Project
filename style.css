@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-image: url(home-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header h1{
+    font-family: 'Space Grotesk';
+    font-size: 80px;
+    font-weight: 700;
+
+    color: white;
+    line-height: 40px;
+}
+.content{
+    width: 85%;
+    margin: 0 auto;
+}
+.description p{
+    font-size: 20px;
+    font-family: 'Space Grotesk';
+    color: white;
+}
+.description span{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(175, 97, 249);
+}

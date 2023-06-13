@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap');
+@font-face {
+    font-family: Alien;
+    src: url(alien-nightmare-font/AlienNightmare-mLvg9.ttf);
+}
+body{
+    background-color: rgb(22, 22, 22);
+}
+.header{
+    margin: 225px auto 0px auto;
+    width: 80%;
+}
+.header h1{
+    line-height: 30px;
+    letter-spacing: 10px;
+    font-family: Alien;
+    color: white;
+}
+.header span{
+    font-family: 'Pacifico';
+    font-size: 120px;
+    font-weight: 700;
+    
+    background: linear-gradient(180deg, #40c9ff, #e81cff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.description{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.description h1{
+    font-size: 30px;
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+    color: white;
+}
+.Started{
+    width: 40%;
+}
+.Started p{
+    font-family: 'Space Grotesk';
+    font-size: 18px;
+    font-weight: 700;
+
+    background: linear-gradient(-45deg, #9FA4C4, #B3CDD1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.my-origami{
+    display: flex;
+}
+.my-origami img{
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.headings{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Space Grotesk';
+
+    background: linear-gradient(180deg, #595cff, #c6f8ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.images{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.images a{
+    margin: 0 20px;
+}
+.images img{
+    height: 250px;
+    border-radius: 15px;
+}
+.video{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 20px;
+}
+.conclusion{
+    width: 80%;
+    margin: 50px auto 150px auto;
+}
+.conclusion h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Space Grotesk';
+
+    background: linear-gradient(180deg, #0061ff, #60efff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    background-color: rgb(22, 22, 22);
+}
+.header h1{
+    background: linear-gradient(180deg, #40c9ff, #e81cff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-top: 140px;
+    text-align: center;
+    font-family: 'Space Grotesk';
+    font-size: 125px;
+    color: white;
+}
+img{
+    width: 350px;
+    border-radius: 10px;
+}
+.course{
+    display: flex;
+    width: 80%;
+    margin: 0 auto 40px;
+
+    font-family: 'Space Grotesk';
+}
+.description{
+ margin-left: 30px;
+}
+.course h2{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.course h4{
+    color: rgb(230, 230, 230);
+    font-weight: 600;
+}
+.course p{
+    color: rgb(230, 230, 230);
+}
+.course a{
+    display: block;
+    text-decoration: none;
+
+    height: 35px;
+    width: 160px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: rgb(187, 0, 255);
+
+    color: white;
+    padding-top: 9px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+
+    transition: 0.1s ease-in;
+}
+.course a:hover{
+    background-color: rgba(187, 0, 255, 0.8);
+}

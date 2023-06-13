@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Me</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='nav.css'> <!--Have 1 common stylesheet for the navbar that you can link on every page-->
+    <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
+</head>
+<!-- GIF Background (a lot of GIF editing), Glassmorphism, Contact Form, -->
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Logo.png" alt="Logo"></a>
+        </div>
+        <div class="menu"> 
+            <ul>
+                <div style="width: 50%; text-align: right;">
+                    <li><a href="coursework.html">Coursework</a></li>
+                    <li><a href="artifacts.html">Artifacts</a></li>
+                    <li style="margin-right: 75px;"><a href="modules.html">Modules</a></li>
+                </div>
+                <div style="width: 50%; text-align: left;">
+                    <li style="margin-left: 75px;"><a href="about.html">About</a></li>
+                    <li><a href="creative.html">Creative</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Contact Me</h1>
+    </div>
+    <div class="header-container">
+        <div class="heading" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+            <p>Would like to ask a question?<br><span>OR</span><br>Have a comment?<br><br>Being one of the few to have seen this portfolio, you can fill out the form and have your inquires responded to by the designer himself!</p>
+        </div>
+        <div class="contact-section" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+            <form action="thankyou.html" method="get" name="myContact" id="myContact">
+                <div class="black-glass">
+                    <h4>Name</h4>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <div class="black-glass" style="height: 100px;">
+                    <h4>Recipient</h4>
+                    <div class="recipient" style="display: flex;">
+                        <img src="favicon.png" alt="photo">
+                        <h4>Jaser Chowdhury</h4>
+                    </div>
+                </div>
+                <div class="black-glass">
+                    <h4>Subject</h4>
+                    <input type="text" name="Subject" id="Subject">
+                </div>
+                <div class="black-glass">
+                    <h4>Email</h4>
+                    <input type="text" name="Email" id="Email">
+                </div>
+                <div class="black-glass" style="height: 160px;">
+                    <h4>Comment</h4>
+                    <textarea name="Comment" id="Comment" cols="60" rows="7"></textarea>
+                </div>
+                <input type="submit" id="submit" name="submit" value="Submit">
+            </form>
+            <script type="text/javascript"> 
+                var frmvalidator = new Validator("myContact"); 
+                frmvalidator.EnableMsgsTogether();
+        
+                frmvalidator.addValidation("Name","req", "Please enter your first name"); 
+                frmvalidator.addValidation("Name","maxlen=50", "Max length for FirstName is 50"); 
+                frmvalidator.addValidation("Name","alpha_s","Name can contain alphabetic chars only");
+        
+                frmvalidator.addValidation("Subject","req", "Please enter a subject"); 
+                frmvalidator.addValidation("Subject","maxlen=20", "Max length for the subject is 20"); 
+        
+                frmvalidator.addValidation("Email","req", "Please enter your email"); 
+                frmvalidator.addValidation("Email","email", "Please enter a valid email"); 
+
+                frmvalidator.addValidation("Comment","req", "Please enter your comment"); 
+            </script>
+        </div>
+    </div>
+    <div class="background-graphic" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: false,
+        });
+    </script>
+</body>
+</html>
