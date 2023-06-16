@@ -6,9 +6,15 @@
     <title>About</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='nav.css'> <!--Have 1 common stylesheet for the navbar that you can link on every page-->
+    
+    <!-- ===== Animate on Scroll ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <link rel='stylesheet' type='text/css' media='screen' href='about.css'>
     <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <!--Animate on Scroll (AOS), Picture Editing, Favicons, Clipping an image to text, -->
 
@@ -43,10 +49,109 @@
             once: false,
         });
     </script>
+    <div class="spacer" style="width: 100%; height: 200px"></div>
+    <section data-aos="fade-up" data-aos-duration="4000" data-aos-once="true">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="about/img1.jpg" alt="1 Year Old">
+                    <h1>I was born on February 2nd, 2005 in New Jersey.</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img2.jpg" alt="Snow Picture">
+                    <h1>The winter of 2008, my family moved to WA.</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img3.jpg" alt="Rosa Parks">
+                    <h1>I started going to Rosa Parks Elementary when I was 6…</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img4.jpg" alt="Alcott Elementary">
+                    <h1>But I transferred to Alcott Elementary when I was 9.</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img5.jpg" alt="Boy Scouts Archery">
+                    <h1>It's where I did Boy Scouts...</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img6.jpg" alt="Skiing at Snoqualmie">
+                    <h1>and Skiing...</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img7alt.jpg" alt="Basketball">
+                    <h1>and Basketball...</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img8.jpg" alt="Taekwondo">
+                    <h1>and finally Taekwondo.</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img9.png" alt="Redmond High School">
+                    <h1>Fast forward a couple years, and I'm at RHS…</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img10.jpg" alt="Graduation Ticket">
+                    <h1>about to graduate!</h1>
+                </div>
+                <div class="swiper-slide">
+                    <div class="spacer" style="width: 100%; height: 150px;"></div>
+                    <h1>Well, thats my story.</h1>
+                </div>
+                <div class="swiper-slide">
+                    <img src="about/img11.jpg" alt="Present-day Me">
+                    <h1>I'll just sit here and finish the rest of my site now.</h1>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            effect: 'coverflow',
+            grabCursor: true, 
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
     <div class="content">
-        <div class="description">
-            <h1>How it Started</h1>
-            <p>Origami Yoda. A fantastic tale of a literal paper Yoda was captivating enough on its own, but the origami instructions in the back provided another feature to enjoy. It wasn't long after I put Yoda on my finger that I grew infatuated with origami. Folding paper is such a trivial task that I took great pleasure in the calmness of it. I could spend hour after hour meticulously folding without ever getting tired of it. Everyone needs a stress reliever and origami became mine. Even now, several years later, I continue my work. While I've lost most of my earlier origami, I haven't lost the memories. Nowadays, I've picked up more complex builds, and I'm still learning to this day. Origami is a limitless art, and one that brings true peace of mind at that.</p>
+        <div class="quote" data-aos="fade-up" data-aos-duration="4000" data-aos-once="false">
+            <h1>I came, I saw, and I...<br><span>conquered<span></h1>
+        </div>
+        <div class="core-intro" data-aos="fade-up" data-aos-duration="4000" data-aos-once="true">
+            <h1>This single quote informs how I conduct myself in the three core aspects of my life.<br>Care to know how?</h1>
+        </div>
+        <div class="core-container">
+            <div class="core" id="core1" data-aos="fade-right" data-aos-duration="4000" data-aos-once="true">
+                <h1>Personal</h1>
+                <p>In my personal life, this applies abstractly. It more or less translates to me trying to be the best human I can possibly be. Kind. Helpful. Steadfast in my convictions. Fun to be around. Empathetic. Reliable. These are some of the pillars I hope and try to uphold, albeit with varying degrees of success. I would like to remembered as an upstanding citizen of the highest degree, and a big part of that is fostering a sense of community wherever I go.</p>
+            </div>
+            <div class="core" id="core2" data-aos="fade-up" data-aos-duration="4000" data-aos-once="true">
+                <h1>School</h1>
+                <p>School is relatively straightforward in this regard: With every class I take, I try to expand my knowledge in the subject matter further than the curriculum accounts for. I like to learn, which in this case means learning as much as possible as quick as possible. I try to come out of every class being an expert at the subject (in some courses this is far easier than others). This plays a bit into my course selection, which is why I tend to go for classes that are broad in scope (in a metaphorical sense, it means a bigger buffet). </p>
+            </div>
+            <div class="core" id="core3"  data-aos="fade-left" data-aos-duration="4000" data-aos-once="true">
+                <h1>Career</h1>
+                <p>Work is the toughest of the 3 to excel in given my youth and subsequent inexperience, but it doesn't stop me from trying voraciously. Right now, I work as a Junior Developer at a telecommunications company. In trying to be the best employee I can be, I work extra hours and try to learn as much of the business as I can so that I stay as prepared as I can. But work isn't entirely about productivity, it's about the camaraderie you build with your coworkers. While I still have areas to improve in, I try my best to relate to my peers and be as welcoming as possible.</p>
+            </div>
+        </div>
+        <div class="conclusion" data-aos="fade-up" data-aos-duration="4000" data-aos-once="true">
+            <h1>If I had to boil the essence of my existence down to one word, it would be self-improvement (I count hyphenated words as 1 ;). I feel like life gets dull if you stay the same person doing the same things. So... here's to hoping that my life stays interesting.</h1>
         </div>
     </div>
 </body>
